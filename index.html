@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="theme-color" content="#0b0e24" />
+    <title>Tennis Chaos</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        background: #0b0e24;
+        overflow: hidden;
+        touch-action: none;
+        -webkit-user-select: none;
+        user-select: none;
+        -webkit-touch-callout: none;
+        overscroll-behavior: none;
+      }
+      #game {
+        position: fixed;
+        inset: 0;
+      }
+      #rotate {
+        display: none;
+        position: fixed;
+        inset: 0;
+        z-index: 10;
+        background: #0b0e24;
+        color: #ffd447;
+        font: 700 22px/1.4 'Trebuchet MS', Arial, sans-serif;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 24px;
+      }
+      #rotate span {
+        display: block;
+        font-size: 64px;
+        margin-bottom: 12px;
+      }
+      @media (orientation: portrait) and (max-width: 700px) {
+        #rotate {
+          display: flex;
+        }
+      }
+    </style>
+    <script type="module" crossorigin src="./assets/index-DacE8Tq5.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-diu3b8Qd.css">
+  </head>
+  <body>
+    <div id="game"></div>
+    <div id="rotate"><div><span>📱↻</span>Gira el móvil para jugar a<br />TENNIS CHAOS en horizontal</div></div>
+  </body>
+</html>
